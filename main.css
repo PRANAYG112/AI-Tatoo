@@ -69,8 +69,8 @@ a {
   padding: 28px 20px;
   position: relative;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .header .menu-icon .navicon {
@@ -106,24 +106,24 @@ a {
   display: none;
 }
 
-.header .menu-btn:checked~.menu {
+.header .menu-btn:checked ~ .menu {
   max-height: 240px;
 }
 
-.header .menu-btn:checked~.menu-icon .navicon {
+.header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked~.menu-icon .navicon:before {
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked~.menu-icon .navicon:after {
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
@@ -132,32 +132,18 @@ a {
   .header li {
     float: left;
   }
-
   .header li a {
-    padding: 20px 30px;
+    padding: 13px 30px;
   }
-
   .header .menu {
     clear: none;
     float: right;
     max-height: none;
   }
-
   .header .menu-icon {
     display: none;
   }
 }
-
-@media (max-width: 500px) {
-  .logo img {
-    width: 13%;
-  }
-
-  .header .menu-btn:checked~.menu {
-    max-height: 280px;
-  }
-}
-
 .ul_header {
   display: flex;
   justify-content: space-between;
@@ -195,15 +181,12 @@ a {
 .company_profile .container .row {
   padding: 36px 36px;
 }
-
 .company_profile .container .row .col-lg-6 .title_comp {
   font-size: 3rem;
 }
-
 .company_profile .container .row .col-lg-6 .desc_comp {
   font-size: 25px;
 }
-
 .company_profile .container .row .col-lg-6 .btn_learn {
   padding: 5px 15px 5px 15px;
   border-radius: 0px;
@@ -212,23 +195,19 @@ a {
 .our_service .container .row {
   padding: 36px 36px;
 }
-
 .our_service .container .row .col-lg-6 .our_service_title {
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 4%;
 }
-
 .our_service .container .row .col-lg-6 .number {
   font-size: 50px;
   font-weight: 600;
   color: grey;
 }
-
 .our_service .services_img {
   height: 80%;
 }
-
 .our_service .services_img img {
   width: 100%;
   height: 80%;
@@ -255,7 +234,7 @@ a {
   padding-top: 60px !important;
 }
 
-.address-main>div.col-lg-4 {
+.address-main > div.col-lg-4 {
   border-bottom: dotted 1px #999;
 }
 
@@ -321,7 +300,7 @@ a {
   padding-top: 90px;
 }
 
-.address-main>div.col-lg-4 {
+.address-main > div.col-lg-4 {
   border-bottom: dotted 1px #999;
 }
 
@@ -383,8 +362,7 @@ a {
   color: #ffb32d;
 }
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
   display: table;
   content: "";
 }
@@ -401,10 +379,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
 }
 
-input:focus,
-textarea:focus,
-keygen:focus,
-select:focus {
+input:focus, textarea:focus, keygen:focus, select:focus {
   outline: none;
 }
 
@@ -419,8 +394,24 @@ select:focus {
   font-weight: 300;
 }
 
+@media (max-width: 500px) {
+  .container {
+    padding: 0 30px 44px;
+  }
+  .title {
+    font-size: 5rem;
+  }
+  .logo img {
+    width: 13%;
+  }
+  .header .menu-btn:checked ~ .menu {
+    max-height: 280px;
+  }
+}
 /* Contact Form Styling */
-
+.container {
+  padding: 0 50px 70px;
+}
 
 .textcenter {
   text-align: center;
@@ -528,53 +519,39 @@ select:focus {
     width: 100%;
   }
 }
-
 @media only screen and (max-width: 960px) {
-
   .section2 .col2 {
     width: 100%;
     display: block;
   }
-
   .section2 .col2.first {
     margin-bottom: 10px;
   }
-
   .section2 .col2.column2 {
     padding: 0;
   }
-
   body .sec2map {
     height: 250px !important;
   }
 }
-
 @media only screen and (max-width: 768px) {
   .section2 .sec2addr {
     font-size: 14px;
   }
-
   .section2 .sec2contactform h3 {
     font-size: 16px;
   }
-
-  .section2 .sec2contactform input[type=text],
-  .section2 .sec2contactform input[type=email],
-  .section2 .sec2contactform textarea {
+  .section2 .sec2contactform input[type=text], .section2 .sec2contactform input[type=email], .section2 .sec2contactform textarea {
     padding: 10px;
     margin: 3px 0;
   }
-
   .section2 .sec2contactform input[type=submit] {
     padding: 10px 30px;
     font-size: 14px;
   }
 }
-
 @media only screen and (max-width: 420px) {
   .section1 h1 {
     font-size: 28px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

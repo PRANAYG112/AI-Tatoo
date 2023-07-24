@@ -51,12 +51,12 @@ a {
 //   }
   .logo{
     img {
-        width:5%;
+        width:3%;
     }
   }
   /* menu */
-  
-  .header .menu {
+.header .menu {
+      margin-top: 1%;
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
@@ -243,7 +243,12 @@ a {
     font-weight: 600;
 }
 .text_desc{
-    font-size:25px;
+    font-size:18px;
+}
+
+.our_service{
+    background-color: black  !important;
+    color: white;;
 }
 
 // Footer
@@ -400,7 +405,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
     }
     .logo{
         img{
-            width:7%;
+            width:7% !important;
         }
     }
     .header .menu-btn:checked ~ .menu {
@@ -501,9 +506,15 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 /* @media querries */
 
 @media only screen and (max-width: 1266px) {
+    .header .menu {
+        margin-top: 0%;
+    }
 	.section2 {
-		width: 100%;
+        width: 100%;
 	}
+    .gallery_cards{
+        margin-top: 2%;
+    }
 }
 @media only screen and (max-width: 960px) {
 	// .container {
